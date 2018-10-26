@@ -6,7 +6,8 @@ textarea,
 .input-group > .input-group-prepend > .input-group-text,
 .list-group-item:first-child,
 .list-group-item:last-child,
-.card-header {
+.card-header,
+.nav-pills .nav-link {
   border-radius: 0px !important;
 }
 
@@ -56,4 +57,9 @@ img {
 
 .form-control::placeholder {
   color: #bbb !important;
+}
+
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+  background-color: #17a2b8 !important;
 }

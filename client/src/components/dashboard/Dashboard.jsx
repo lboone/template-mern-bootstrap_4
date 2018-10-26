@@ -26,9 +26,6 @@ class Dashboard extends Component {
       if (Object.keys(profile).length > 0) {
         dashboardContent = (
           <div>
-            <p className="lead text-muted">
-              Welcome <Link to={`/edit-profile`}>{user.name}</Link>
-            </p>
             <div className="profile">
               <div className="container">
                 <nav className="navbar navbar-expand-lg navbar-light bg-info">
@@ -77,7 +74,81 @@ class Dashboard extends Component {
           <div className="row">
             <div className="col-md-12">
               <h1 className="display-4">Dashboard</h1>
-              {dashboardContent}
+              <p className="lead text-muted">
+                Welcome <Link to={`/edit-profile`}>{user.name}</Link>
+              </p>
+              <div className="row">
+                <div className="col-3">
+                  <div
+                    className="nav flex-column nav-pills"
+                    id="v-pills-tab"
+                    role="tablist"
+                    aria-orientation="vertical"
+                  >
+                    <a
+                      className="nav-link active"
+                      id="v-pills-profile-tab"
+                      data-toggle="pill"
+                      href="#v-pills-profile"
+                      role="tab"
+                      aria-controls="v-pills-profile"
+                      aria-selected="false"
+                    >
+                      Profile
+                    </a>
+                    <a
+                      className="nav-link"
+                      id="v-pills-messages-tab"
+                      data-toggle="pill"
+                      href="#v-pills-messages"
+                      role="tab"
+                      aria-controls="v-pills-messages"
+                      aria-selected="false"
+                    >
+                      Messages
+                    </a>
+                    <a
+                      className="nav-link"
+                      id="v-pills-settings-tab"
+                      data-toggle="pill"
+                      href="#v-pills-settings"
+                      role="tab"
+                      aria-controls="v-pills-settings"
+                      aria-selected="false"
+                    >
+                      Settings
+                    </a>
+                  </div>
+                </div>
+                <div className="col-9">
+                  <div className="tab-content" id="v-pills-tabContent">
+                    <div
+                      className="tab-pane fade show active"
+                      id="v-pills-profile"
+                      role="tabpanel"
+                      aria-labelledby="v-pills-profile-tab"
+                    >
+                      {dashboardContent}
+                    </div>
+                    <div
+                      className="tab-pane fade"
+                      id="v-pills-messages"
+                      role="tabpanel"
+                      aria-labelledby="v-pills-messages-tab"
+                    >
+                      Messages
+                    </div>
+                    <div
+                      className="tab-pane fade"
+                      id="v-pills-settings"
+                      role="tabpanel"
+                      aria-labelledby="v-pills-settings-tab"
+                    >
+                      Settings
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
