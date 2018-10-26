@@ -23,8 +23,8 @@ git clone https://github.com/lboone/template-mern_material_ui.git
 Initialize the project (This will install all of the dependancies)
 
 ```
-npm init
-npm run dev-install
+npm install
+npm run client-install
 ```
 
 Dev Dependancies
