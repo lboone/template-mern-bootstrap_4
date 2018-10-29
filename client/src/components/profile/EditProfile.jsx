@@ -55,7 +55,10 @@ class EditProfile extends Component {
       profile.bio = isNotEmpty(profile.bio) ? profile.bio : "";
 
       /// Skills Array - change back to coma separated value
-      const skillsCSV = profile.skills.join(",");
+      let skillsCSV = null;
+      if (profile.skills) {
+        skillsCSV = profile.skills.join(",");
+      }
 
       profile.social = isNotEmpty(profile.social) ? profile.social : {};
       let displaySocialInputs = true;
