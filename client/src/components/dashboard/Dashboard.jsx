@@ -28,7 +28,7 @@ class Dashboard extends Component {
           <div>
             <div className="profile">
               <div className="container">
-                <nav className="navbar navbar-expand-lg navbar-light bg-info">
+                <nav className="navbar navbar-expand-lg navbar-light bg-primary">
                   <ul className="navbar-nav mr-auto">
                     <li className="nav-item">
                       <Link to="/edit-profile" className="btn btn-light">

@@ -72,6 +72,13 @@ Update the client config keys in the client\src\config\keys.js file
 Open the file and change all of the config keys.
 ```
 
+Update the color scheme
+
+```
+Open the client\public\index.html file and comment out the bootstrap file to restore default colors.
+Replace the content of the client\public\bootstrap.css file with a new copy of the bootstrap theme.
+```
+
 ## Deployment
 
 You can deploy on heroku.
