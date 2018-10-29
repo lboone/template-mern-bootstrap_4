@@ -58,8 +58,7 @@ img {
 .form-control::placeholder {
   color: #bbb !important;
 }
-
 .nav-pills .nav-link.active,
 .nav-pills .show > .nav-link {
-  background-color: #17a2b8 !important;
+  background-color: #313b44 !important;
 }
