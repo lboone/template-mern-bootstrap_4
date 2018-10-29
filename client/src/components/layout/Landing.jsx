@@ -20,10 +20,13 @@ class Landing extends Component {
                 <h1 className="display-3 mb-4">{APP_TITLE}</h1>
                 <p className="lead"> {APP_SLOGAN}</p>
                 <hr />
-                <Link to="/register" className="btn btn-lg btn-info mr-2">
+                <Link to="/register" className="btn btn-lg btn-secondary mr-2">
                   Sign Up
                 </Link>
-                <Link to="/login" className="btn btn-lg btn-light">
+                <Link
+                  to="/login"
+                  className="btn btn-lg btn-light text-secondary"
+                >
                   Login
                 </Link>
               </div>
