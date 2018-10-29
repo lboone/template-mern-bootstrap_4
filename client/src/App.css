@@ -58,3 +58,7 @@ img {
 .form-control::placeholder {
   color: #bbb !important;
 }
+
+#dashboard-edit-user-button:hover {
+  color: #3c4252 !important;
+}

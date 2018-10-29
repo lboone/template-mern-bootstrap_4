@@ -31,8 +31,15 @@ class Dashboard extends Component {
                 <nav className="navbar navbar-expand-lg navbar-light bg-primary">
                   <ul className="navbar-nav mr-auto">
                     <li className="nav-item">
-                      <Link to="/edit-profile" className="btn btn-light">
-                        <i className="fas fa-user-circle text-primary mr-1" />{" "}
+                      <Link
+                        id="dashboard-edit-user-button"
+                        to="/edit-profile"
+                        className="btn btn-outline-light btn-sm"
+                      >
+                        <i
+                          id="dashboard-edit-user-icon"
+                          className="fas fa-user-edit mr-1"
+                        />{" "}
                         Edit Profile
                       </Link>
                     </li>
@@ -41,9 +48,10 @@ class Dashboard extends Component {
                     <li className="nav-item">
                       <button
                         style={{ float: "right" }}
-                        className="btn btn-danger"
+                        className="btn btn-light text-danger btn-sm"
                         onClick={this.onDeleteClick}
                       >
+                        <i className="fas fa-user-times text-danger mr-1" />{" "}
                         Delete My Account
                       </button>
                     </li>
