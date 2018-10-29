@@ -32,8 +32,8 @@ class Dashboard extends Component {
                   <ul className="navbar-nav mr-auto">
                     <li className="nav-item">
                       <Link to="/edit-profile" className="btn btn-light">
-                        <i className="fas fa-user-circle text-info mr-1" /> Edit
-                        Profile
+                        <i className="fas fa-user-circle text-primary mr-1" />{" "}
+                        Edit Profile
                       </Link>
                     </li>
                   </ul>
